@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aki-iのポートフォリオ</title>
+    <title>岩田明久のポートフォリオ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="main-header">
         <nav>
-            <a href="#" class="logo">aki-i</a>
+            <a href="#" class="logo"></a>
             <ul class="nav-links">
                 <li><a href="#projects">プロジェクト</a></li>
-                <li><a href="#skills">スキル</a></li>
-                <li><a href="#about">自己紹介</a></li>
+                <!--<li><a href="#skills">スキル</a></li>-->
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <video autoplay loop muted playsinline id="hero-video">
-            <source src="assets/discord_bot_and_launcher_movie.mp4" type="video/mp4">
-        </video>
         <div class="hero-content fade-in">
-            <h1>aki-i ポートフォリオ</h1>
-            <p>DartとPythonで革新的なソリューションを創造</p>
+            <h1>岩田明久の<br>ポートフォリオ</h1>
+            <!--<p>DartとPythonで革新的なソリューションを創造</p>-->
         </div>
     </section>
 
@@ -35,7 +31,7 @@
 
             <div class="project-card fade-in">
                 <div class="project-image">
-                    <img src="assets/RC_Manager_HomeScreen.PNG" alt="RCセッティングマネージャー">
+                    <img src="assets/RC_Manager_HomeScreen.PNG" alt="RCセッティングマネージャー" class="clickable-media" data-project="rc-manager" data-src="assets/RC_Manager_HomeScreen.PNG" data-type="image">
                 </div>
                 <div class="project-content">
                     <h3>RCセッティングマネージャー</h3>
@@ -46,15 +42,21 @@
                         <span>Firebase</span>
                         <span>PWA</span>
                     </div>
+                    <div class="project-platforms">
+                        <span>Android</span>
+                        <span>iOS</span>
+                        <span>Web</span>
+                    </div>
                     <div class="project-links">
                         <a href="https://github.com/akiii2024/RC_Setting_Manager" target="_blank">GitHubリポジトリ</a>
+                        <a href="https://akiii2024.github.io/RC_Setting_Manager/" target="_blank" class="try-now-btn">今すぐ試す</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card fade-in">
                 <div class="project-image">
-                    <video src="assets/discord_bot_and_launcher_movie.mp4" autoplay loop muted playsinline></video>
+                    <video src="assets/discord_bot_and_launcher_movie.mp4" autoplay loop muted playsinline class="clickable-media" data-project="discord-bot" data-src="assets/discord_bot_and_launcher_movie.mp4" data-type="video"></video>
                 </div>
                 <div class="project-content">
                     <h3>AI搭載 Discordボットスイート</h3>
@@ -73,7 +75,7 @@
 
             <div class="project-card fade-in">
                 <div class="project-image">
-                    <img src="assets/location_memo_HomeScreen.png" alt="位置情報メモアプリ">
+                    <img src="assets/location_memo_HomeScreen.png" alt="位置情報メモアプリ" class="clickable-media" data-project="location-memo" data-src="assets/location_memo_HomeScreen.png" data-type="image">
                 </div>
                 <div class="project-content">
                     <h3>フィールドワーク用 位置情報メモ</h3>
@@ -85,15 +87,45 @@
                         <span>Hive</span>
                         <span>Gemini API</span>
                     </div>
+                    <div class="project-platforms">
+                        <span>Android</span>
+                        <span>iOS</span>
+                        <span>Web</span>
+                    </div>
                     <div class="project-links">
                         <a href="https://github.com/akiii2024/location_memo" target="_blank">GitHubリポジトリ</a>
+                        <a href="https://akiii2024.github.io/location_memo/" target="_blank" class="try-now-btn">今すぐ試す</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <img src="assets/kakomon_kanri.png" alt="過去問管理アプリ" class="clickable-media" data-project="kakomon-kanri" data-src="assets/kakomon_kanri.png" data-type="image">
+                </div>
+                <div class="project-content">
+                    <h3>過去問管理アプリ</h3>
+                    <p>大学生向けの過去問管理・記録アプリ。画像での問題登録、履修科目管理、ユーザーライブラリ機能を搭載。ほかのプロジェクトに比べ昔のもののため、AI依存度が低いためコーディング力の参考になると思います。</p>
+                    <div class="project-tech">
+                        <span>Dart</span>
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Hive</span>
+                    </div>
+                    <div class="project-platforms">
+                        <span>Android</span>
+                        <span>iOS</span>
+                        <span>Web</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/akiii2024/kakomon_kanri" target="_blank">GitHubリポジトリ</a>
                     </div>
                 </div>
             </div>
 
         </section>
 
-        <section id="skills" class="section-wrapper">
+        <!-- <section id="skills" class="section-wrapper">
             <h2 class="section-title fade-in">テクニカルスキル</h2>
             <div class="skill-grid">
                 <div class="skill-category fade-in">
@@ -125,18 +157,56 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section id="about" class="section-wrapper fade-in">
-            <h2 class="section-title">自己紹介</h2>
-            <p>実用的で革新的なアプリケーション開発に情熱を注ぐデベロッパーです。DartとPythonを用いたアプリケーション開発を得意としています。常に新しい技術を探求し、デベロッパーとして学び、成長することに意欲的です。</p>
-        </section>
+
 
     </main>
 
     <footer>
         <p>&copy; 2024 aki-i. All Rights Reserved.</p>
     </footer>
+
+    <!-- モーダル -->
+    <div id="rc-manager-modal" class="modal project-modal">
+        <span class="close">&times;</span>
+        <button class="nav-btn prev-btn">&lt;</button>
+        <button class="nav-btn next-btn">&gt;</button>
+        <img class="modal-content" id="rc-manager-modalImage">
+        <video class="modal-content" id="rc-manager-modalVideo" controls>
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="discord-bot-modal" class="modal project-modal">
+        <span class="close">&times;</span>
+        <button class="nav-btn prev-btn">&lt;</button>
+        <button class="nav-btn next-btn">&gt;</button>
+        <img class="modal-content" id="discord-bot-modalImage">
+        <video class="modal-content" id="discord-bot-modalVideo" controls>
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="location-memo-modal" class="modal project-modal">
+        <span class="close">&times;</span>
+        <button class="nav-btn prev-btn">&lt;</button>
+        <button class="nav-btn next-btn">&gt;</button>
+        <img class="modal-content" id="location-memo-modalImage">
+        <video class="modal-content" id="location-memo-modalVideo" controls>
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="kakomon-kanri-modal" class="modal project-modal">
+        <span class="close">&times;</span>
+        <button class="nav-btn prev-btn">&lt;</button>
+        <button class="nav-btn next-btn">&gt;</button>
+        <img class="modal-content" id="kakomon-kanri-modalImage">
+        <video class="modal-content" id="kakomon-kanri-modalVideo" controls>
+            <source src="" type="video/mp4">
+        </video>
+    </div>
 
     <script>
         const faders = document.querySelectorAll('.fade-in');
@@ -161,6 +231,164 @@
 
         faders.forEach(fader => {
             appearOnScroll.observe(fader);
+        });
+
+                // プロジェクトごとのモーダル機能
+        const projectModals = {
+            'rc-manager': {
+                modal: document.getElementById('rc-manager-modal'),
+                modalImg: document.getElementById('rc-manager-modalImage'),
+                modalVideo: document.getElementById('rc-manager-modalVideo'),
+                currentIndex: 0,
+                mediaItems: []
+            },
+            'discord-bot': {
+                modal: document.getElementById('discord-bot-modal'),
+                modalImg: document.getElementById('discord-bot-modalImage'),
+                modalVideo: document.getElementById('discord-bot-modalVideo'),
+                currentIndex: 0,
+                mediaItems: []
+            },
+            'location-memo': {
+                modal: document.getElementById('location-memo-modal'),
+                modalImg: document.getElementById('location-memo-modalImage'),
+                modalVideo: document.getElementById('location-memo-modalVideo'),
+                currentIndex: 0,
+                mediaItems: []
+            },
+            'kakomon-kanri': {
+                modal: document.getElementById('kakomon-kanri-modal'),
+                modalImg: document.getElementById('kakomon-kanri-modalImage'),
+                modalVideo: document.getElementById('kakomon-kanri-modalVideo'),
+                currentIndex: 0,
+                mediaItems: []
+            }
+        };
+
+        // 各プロジェクトのメディアアイテムを設定
+        projectModals['rc-manager'].mediaItems = [
+            { src: 'assets/RC_Manager_HomeScreen.PNG', type: 'image' },
+            { src: 'assets/RC_Manager_SettingEditScreen.PNG', type: 'image' },
+        ];
+        
+        projectModals['discord-bot'].mediaItems = [
+            { src: 'assets/discord_bot_and_launcher_movie.mp4', type: 'video' },
+            { src: 'assets/discord_bot_chat_history.png', type: 'image' }
+        ];
+        
+        projectModals['location-memo'].mediaItems = [
+            { src: 'assets/location_memo_HomeScreen.png', type: 'image' },
+            { src: 'assets/location_memo_print_screen.png', type: 'image' }
+        ];
+        
+        projectModals['kakomon-kanri'].mediaItems = [
+            { src: 'assets/kakomon_kanri.png', type: 'image' }
+        ];
+
+        // メディアを表示する関数
+        function showProjectMedia(projectKey, index) {
+            const project = projectModals[projectKey];
+            const item = project.mediaItems[index];
+            if (!item) return;
+            
+            if (item.type === 'image') {
+                project.modalImg.style.display = 'block';
+                project.modalVideo.style.display = 'none';
+                project.modalImg.src = item.src;
+            } else if (item.type === 'video') {
+                project.modalVideo.style.display = 'block';
+                project.modalImg.style.display = 'none';
+                project.modalVideo.src = item.src;
+                project.modalVideo.load();
+            }
+            
+            // ナビゲーションボタンの表示/非表示
+            const prevBtn = project.modal.querySelector('.prev-btn');
+            const nextBtn = project.modal.querySelector('.next-btn');
+            prevBtn.style.display = index > 0 ? 'block' : 'none';
+            nextBtn.style.display = index < project.mediaItems.length - 1 ? 'block' : 'none';
+        }
+
+        // メディアをクリックしたときの処理
+        const clickableMedia = document.querySelectorAll('.clickable-media');
+        clickableMedia.forEach((media, index) => {
+            media.addEventListener('click', function() {
+                const project = this.getAttribute('data-project');
+                const projectData = projectModals[project];
+                
+                // 最初の画像から開始
+                projectData.currentIndex = 0;
+                showProjectMedia(project, 0);
+                projectData.modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // 各モーダルのナビゲーションボタンにイベントリスナーを追加
+        Object.keys(projectModals).forEach(projectKey => {
+            const project = projectModals[projectKey];
+            const prevBtn = project.modal.querySelector('.prev-btn');
+            const nextBtn = project.modal.querySelector('.next-btn');
+            const closeBtn = project.modal.querySelector('.close');
+
+            // 前のメディアに移動
+            prevBtn.addEventListener('click', function() {
+                if (project.currentIndex > 0) {
+                    project.currentIndex--;
+                    showProjectMedia(projectKey, project.currentIndex);
+                }
+            });
+
+            // 次のメディアに移動
+            nextBtn.addEventListener('click', function() {
+                if (project.currentIndex < project.mediaItems.length - 1) {
+                    project.currentIndex++;
+                    showProjectMedia(projectKey, project.currentIndex);
+                }
+            });
+
+            // 閉じるボタン
+            closeBtn.addEventListener('click', function() {
+                project.modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                if (project.modalVideo.style.display === 'block') {
+                    project.modalVideo.pause();
+                }
+            });
+
+            // モーダル外をクリック
+            project.modal.addEventListener('click', function(e) {
+                if (e.target === project.modal) {
+                    project.modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                    if (project.modalVideo.style.display === 'block') {
+                        project.modalVideo.pause();
+                    }
+                }
+            });
+        });
+
+        // キーボードナビゲーション
+        document.addEventListener('keydown', function(e) {
+            const activeModal = document.querySelector('.project-modal[style*="block"]');
+            if (activeModal) {
+                const projectKey = activeModal.id.replace('-modal', '');
+                const project = projectModals[projectKey];
+                
+                if (e.key === 'Escape') {
+                    project.modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                    if (project.modalVideo.style.display === 'block') {
+                        project.modalVideo.pause();
+                    }
+                } else if (e.key === 'ArrowLeft' && project.currentIndex > 0) {
+                    project.currentIndex--;
+                    showProjectMedia(projectKey, project.currentIndex);
+                } else if (e.key === 'ArrowRight' && project.currentIndex < project.mediaItems.length - 1) {
+                    project.currentIndex++;
+                    showProjectMedia(projectKey, project.currentIndex);
+                }
+            }
         });
     </script>
 
