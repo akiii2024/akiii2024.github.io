@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aki-iのポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav>
+            <a href="#" class="logo">aki-i</a>
+            <ul class="nav-links">
+                <li><a href="#projects">プロジェクト</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#about">自己紹介</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay loop muted playsinline id="hero-video">
+            <source src="assets/discord_bot_and_launcher_movie.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content fade-in">
+            <h1>aki-i ポートフォリオ</h1>
+            <p>DartとPythonで革新的なソリューションを創造</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="projects" class="section-wrapper">
+            <h2 class="section-title fade-in">プロジェクト</h2>
+
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <img src="assets/RC_Manager_HomeScreen.PNG" alt="RCセッティングマネージャー">
+                </div>
+                <div class="project-content">
+                    <h3>RCセッティングマネージャー</h3>
+                    <p>RCカー愛好家のためのセッティング記録・管理アプリ。PWA対応で、Firebaseによる認証とデータ同期機能を備えています。</p>
+                    <div class="project-tech">
+                        <span>Dart</span>
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>PWA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/akiii2024/RC_Setting_Manager" target="_blank">GitHubリポジトリ</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <video src="assets/discord_bot_and_launcher_movie.mp4" autoplay loop muted playsinline></video>
+                </div>
+                <div class="project-content">
+                    <h3>AI搭載 Discordボットスイート</h3>
+                    <p>Gemini APIを利用してDiscordボットを自動生成するサービスと、それを簡単に起動できるGUIランチャーです。</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Gemini API</span>
+                        <span>tkinter</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/akiii2024/easy_bot_creater" target="_blank">ボットクリエーター</a>
+                        <a href="https://github.com/akiii2024/DiscordBotLauncher" target="_blank">ボットランチャー</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <img src="assets/location_memo_HomeScreen.png" alt="位置情報メモアプリ">
+                </div>
+                <div class="project-content">
+                    <h3>フィールドワーク用 位置情報メモ</h3>
+                    <p>フィールドワークを効率化する多機能アプリ。位置情報付きメモ、カスタムマップ、AI画像分析、PWAによるオフライン対応などが特徴です。</p>
+                    <div class="project-tech">
+                        <span>Dart</span>
+                        <span>Flutter</span>
+                        <span>SQLite</span>
+                        <span>Hive</span>
+                        <span>Gemini API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/akiii2024/location_memo" target="_blank">GitHubリポジトリ</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="skills" class="section-wrapper">
+            <h2 class="section-title fade-in">テクニカルスキル</h2>
+            <div class="skill-grid">
+                <div class="skill-category fade-in">
+                    <h3>言語</h3>
+                    <ul>
+                        <li>Dart</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>フレームワーク & ライブラリ</h3>
+                    <ul>
+                        <li>Flutter</li>
+                        <li>tkinter</li>
+                    </ul>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>データベース & ストレージ</h3>
+                    <ul>
+                        <li>SQLite</li>
+                        <li>Hive</li>
+                    </ul>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>API & サービス</h3>
+                    <ul>
+                        <li>Firebase</li>
+                        <li>Gemini API</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-wrapper fade-in">
+            <h2 class="section-title">自己紹介</h2>
+            <p>実用的で革新的なアプリケーション開発に情熱を注ぐデベロッパーです。DartとPythonを用いたアプリケーション開発を得意としています。常に新しい技術を探求し、デベロッパーとして学び、成長することに意欲的です。</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 aki-i. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOptions = {
+            threshold: 0.2,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(
+            entries,
+            appearOnScroll
+        ) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+                entry.target.classList.add('visible');
+                appearOnScroll.unobserve(entry.target);
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
+</body>
+</html>
